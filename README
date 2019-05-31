@@ -1,0 +1,4 @@
+This is a toy program I made to simulate a pokemon battle.
+
+It is very stupid, there are many features that are not implemented, but still if you do not do anything strange (like digiting numbers outside the one suggested) it works pretty well, so that I can say that I am pretty satisfied with that.
+To compile it, it suffices to use the Makefile (digit make) in src/ directory.
