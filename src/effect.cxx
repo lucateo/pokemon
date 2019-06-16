@@ -17,7 +17,6 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 		}
 	}
 	
-	
 	if(effect=="riduci spdef avversario"   )
 	{
 		int successo=rand()%100 + 30;
@@ -41,42 +40,29 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 	
 	if(effect=="riduci spatk mio"     )
 	{
-		
 			a->putModifySpatk(a->getModifySpatk() -1);
 			std::cout << "cala attacco speciale di " << a->getName() << std::endl;
 		
 	}
 	
-	
-	
 	if(effect=="aumento spatk mio"     )
 	{
-		
 			a->putModifySpatk(a->getModifySpatk() +1);
 			std::cout << "aumenta attacco speciale di " << a->getName() << std::endl;
-		
 	}
-	
-	
 	
 	if(effect=="aumento spdef mio"     )
 	{
-		
 			a->putModifySpdef(a->getModifySpdef() +1);
 			std::cout << "aumenta difesa speciale di " << a->getName() << std::endl;
-		
 	}
-	
-	
 	
 	if(effect=="aumento speed mio"     )
 	{
 		
 			a->putModifySpeed(a->getModifySpeed() +1);
 			std::cout << "aumenta velocità di " << a->getName() << std::endl;
-		}
-		
-		
+	}
 	
 	if(effect=="aumento atk mio"     )
 	{
@@ -84,13 +70,10 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 			std::cout << "aumenta attacco di " << a->getName() << std::endl;
 	}
 	
-	
-	
 	if(effect=="togli 40 ps"     )
 	{
 		b->putPs(b->getPs() - 40);
 	}
-	
 	
 	if(effect=="recupera ps"     )
 	{
@@ -101,12 +84,10 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 			a->putPs(recupero);
 	}
 	
-	
 	if(effect=="autodistruzione"     )
 	{
 		a->putPs(0);
 	}
-	
 	
 	if(effect=="avvelena sicuro"     )
 	{
@@ -126,7 +107,6 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 			std::cout << b->getName() << " è stato avvelenato!" << std::endl;
 		}
 	}
-	
 	
 	if(effect=="brucia sicuro"     )
 	{
@@ -148,7 +128,6 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 			std::cout << b->getName() << " è stato bruciato!" << std::endl;
 		}
 	}
-	
 	
 	if(effect=="paralizza"     )
 	{
@@ -192,12 +171,10 @@ void useEffect(std::string effect, Pokemon *a, Pokemon *b, Campo *c, Allenatore 
 		}
 	}
 	
-	
 	if(effect=="togli ps come il livello"     )
 	{
 		b->putPs(b->getPs() - a->getLevel());	
 	}
-	
 	
 	if(effect=="giornodisole"     )
 	{
